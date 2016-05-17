@@ -1,0 +1,36 @@
+.transaction { 
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  background: grey;
+  padding: 10px;
+}
+
+.address {
+  background: #EBF0F6;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.items {
+  text-align: right;
+}
+
+.amount {
+  text-align: left;
+}
+
+.total {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer {
+  padding-top: 30px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}

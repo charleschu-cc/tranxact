@@ -1,0 +1,38 @@
+<ion-view view-title="Transact-Pay">
+  <ion-content class="padding">
+    <div class="button-bar">
+      <a class="button button-dark" href="">
+         <i class="icon ion-bag"></i>
+        Pay
+      </a>
+      <a class="button button-light" href="#/tab/get">
+        <i class="icon ion-archive"></i>
+        Get
+      </a>
+    </div>
+    <div class="padding">
+      <h3>Enter Purchase Details</h3> 
+    </div>
+    <div class="list list-inset">
+      <label class="item item-input">
+        <i class="icon ion-person placeholder-icon"></i>
+        <input type="text" placeholder="Name" ng-model="name">
+      </label>
+      <label class="item item-input">
+        <i class="icon ion-android-cart placeholder-icon"></i>
+        <input type="text" placeholder="Items" ng-model="item">
+      </label>
+      <label class="item item-input">
+        <i class="icon ion-pricetag placeholder-icon"></i>
+        <input type="text" placeholder="Price" ng-model="price">
+      </label>
+      <label class="item item-input">
+        <i class="icon ion-android-list placeholder-icon"></i>
+        <input type="text" placeholder="Remarks" ng-model="remarks">
+      </label>
+      <a class="button button-block ion-checkmark button-calm" ng-click="invoice()"> Invoice</a>
+    </div>
+    </p>
+    <qrcode version="5" error-correction-level="M" size="150" data="{ name:{{name}}, item:{{item}}, price:{{price}}, remarks:{{remarks}} }"></qrcode>
+  </ion-content>
+</ion-view>

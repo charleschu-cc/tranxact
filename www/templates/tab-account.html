@@ -1,0 +1,23 @@
+<ion-view view-title="Account">
+  <ion-content>
+  	<div class="item item-image">
+    	<img src="http://i.telegraph.co.uk/multimedia/archive/02622/countrysidescene_2622428b.jpg">
+  	</div>
+	<div class="item item-avatar item-icon-right">
+    	<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwvmVYUq3o3OVdggak_3OfrMrYcER9mRjQVnEip5BwUmDVoaXB7g">
+    	<h2>Taylor Swift</h2>
+    	<p>November 05, 1983</p>
+    	<i class="icon ion-social-facebook"></i>
+    	<span class="badge badge-assertive">1</span>
+  	</div>   
+  	<ion-list>
+    	<a class="item item-icon-left" ng-click="login()">
+    		<i class="icon ion-ios-paw"></i>
+    		Edit Account
+  		</a>
+  		<ion-toggle	ng-model="settings.enableFriends">
+        	Enable Friends
+    	</ion-toggle>
+    </ion-list>
+  </ion-content>
+</ion-view>

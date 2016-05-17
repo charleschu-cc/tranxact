@@ -1,0 +1,98 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="{{chat.name}}">
+  <ion-content class="transaction">
+    <!-- <img ng-src="{{chat.logo}}" style="width: 64px; height: 64px">
+    <p>
+      {{chat.lastText}}
+    </p> -->
+    <img src="{{chat.logo}}"></img>
+          <div class="address">
+            <p>1 Harbourfront Walk, #03-08A VivoCity, 098585</br>
+        Tel: 6376 8103. Open: 11AM-10PM
+            </p>
+            You are served by Jason Poon at 12:53pm, 06-05-2016
+          </div>
+          <div class="header">Sales Items</div>
+          <div class="items">
+            <div class="row">
+              <div class="col">Orange Juice
+              </div>
+              <div class="col-10"></div>
+              <div class="col amount">$2.50
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">Mineral Water
+              </div>
+              <div class="col-10"></div>
+              <div class="col amount">$0.50
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">Grilled SeaBass
+              </div>
+              <div class="col-10"></div>
+              <div class="col amount">$22.00
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">小龙包（10 粒）
+              </div>
+              <div class="col-10"></div>
+              <div class="col amount">$20.00
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col">Item(s)
+              </div>
+              <div class="col-10"></div>
+              <div class="col amount">4
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">Sub-Total:
+              </div>
+              <div class="col-10"></div>
+              <div class="col amount">$45.00
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">Service Charge (10%):
+              </div>
+              <div class="col-10"></div>
+              <div class="col amount">$4.50
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">GST (7%):
+              </div>
+              <div class="col-10"></div>
+              <div class="col amount">$3.15
+              </div>
+            </div>
+            <div class="row total">
+              <div class="col">Total:
+              </div>
+              <div class="col-10"></div>
+              <div class="col amount">$53.65
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">Payment by:
+              </div>
+              <div class="col-10"></div>
+              <div class="col amount">Cash
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            Processed by <b>Tranxact</b>, Singapore 
+          </div>
+  </ion-content>
+</ion-view>

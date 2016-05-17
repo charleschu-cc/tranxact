@@ -1,0 +1,32 @@
+<ion-view view-title="Transact-Get">
+  <ion-content class="padding">
+    <div class="button-bar">
+      <a class="button button-light" href="#/tab/pay">
+         <i class="icon ion-bag"></i>
+        Pay
+      </a>
+      <a class="button button-dark" href="">
+        <i class="icon ion-archive"></i>
+        Get
+      </a>
+    </div>
+    <div class="padding">
+      <h3>Scan Purchase Details</h3> 
+    </div>
+    <div class="card">
+      <div class="item">
+        <button class="button button-block button-positive" ng-click="scan()">
+            <i class="icon ion-qr-scanner"></i>
+            Scan Now
+            </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="item item-divider">Scan Results</div>
+        <div class="item item-text-wrap">
+          <p ng-bind-html="scanResults | linky: '_system' | hrefToJS"></p>
+      </div>
+    </div>
+    </p>
+  </ion-content>
+</ion-view>
